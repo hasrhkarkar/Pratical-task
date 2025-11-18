@@ -1,0 +1,38 @@
+{
+  "activities": {
+    "title": "Activities",
+    "items": [
+      {
+        "id": 1,
+        "name": "Games",
+        "image": "/images/activities/games.png"
+      }
+    ]
+  },
+  "birds": [
+    {
+      "id": 1,
+      "image": "/images/birds/bird1.png",
+      "position": "top-left",
+      "delay": 0
+    },
+    {
+      "id": 2,
+      "image": "/images/birds/bird2.png",
+      "position": "top-right",
+      "delay": 1
+    },
+    {
+      "id": 3,
+      "image": "/images/birds/bird3.png",
+      "position": "bottom-left",
+      "delay": 2
+    },
+    {
+      "id": 4,
+      "image": "/images/birds/bird4.png",
+      "position": "bottom-right",
+      "delay": 1.5
+    }
+  ]
+}

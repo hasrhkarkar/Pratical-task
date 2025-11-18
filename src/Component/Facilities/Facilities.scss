@@ -1,0 +1,255 @@
+.facilities-section {
+  position: relative;
+  width: 100%;
+  padding: 80px 20px;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    width: unset;
+  }
+}
+
+/* Decorative Bird */
+.facilities-bird {
+  position: absolute;
+  top: 30px;
+  right: 24%;
+  width: 120px;
+  height: 120px;
+  animation: birdBounce 3s ease-in-out infinite;
+  z-index: 99;
+
+  img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    @media (max-width: 768px) {
+      width: 177px;
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 80px;
+    height: 80px;
+    top: -162px;
+    right: 98px;
+  }
+}
+
+@keyframes birdBounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Facilities Title */
+.facilities-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e91e8c;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-family: "Gochi Hand";
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
+
+/* Facilities Container */
+.facilities-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Swiper Slider Styling */
+.facilities-swiper {
+  /* make the swiper edge-to-edge */
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0;
+  }
+}
+
+/* Facility Slide */
+.facility-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+
+  @media (max-width: 768px) {
+    min-height: 300px;
+  }
+}
+
+/* Facility Item */
+.facility-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  animation: fadeInScale 0.6s ease;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Facility Image Wrapper */
+.facility-image-wrapper {
+  /* allow the image wrapper to span full slide width */
+  width: 100%;
+  max-width: 100%;
+  height: 100%; /* desktop height - adjust if needed */
+  border-radius: 6px;
+  padding: 0; /* remove internal padding so image fills wrapper */
+  background-color: white;
+  display: block;
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+
+  @media (max-width: 1200px) {
+    height: 420px;
+  }
+
+  @media (max-width: 768px) {
+    height: 320px;
+  }
+
+  @media (max-width: 480px) {
+    height: 220px;
+  }
+}
+
+/* Facility Image */
+.facility-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* cover ensures full-bleed look */
+  transition: transform 0.3s ease;
+
+  .facility-image-wrapper:hover & {
+    transform: scale(1.03);
+  }
+}
+
+/* Facility Name */
+.facility-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #6b2e7f;
+  margin: 0;
+  letter-spacing: 0.5px;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
+}
+
+/* Custom Navigation Buttons */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #6b2e7f 0%, #4a1f5c 100%);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(107, 46, 127, 0.3);
+
+  &:hover {
+    background: linear-gradient(135deg, #e91e8c 0%, #d91681 100%);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 25px rgba(233, 30, 140, 0.4);
+  }
+
+  &:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+
+.swiper-button-prev-custom {
+  left: 10px;
+}
+
+.swiper-button-next-custom {
+  right: 10px;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+
+  .swiper-pagination-bullet {
+    background-color: #e91e8c;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &.swiper-pagination-bullet-active {
+      background-color: #e91e8c;
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .facilities-section {
+    padding: 60px 15px;
+    overflow: unset;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "facilities": {
+    "title": "Facilities",
+    "items": [
+      {
+        "id": 1,
+        "name": "Digital Classroom",
+        "image": "/images/footerimg.svg",
+        "position": "left"
+      },
+      {
+        "id": 2,
+        "name": "Good Meal",
+        "image": "/images/footerimg.svg",
+        "position": "top"
+      },
+      {
+        "id": 3,
+        "name": "Play Ground",
+        "image": "/images/footerimg.svg",
+        "position": "bottom"
+      }
+    ]
+  },
+  "bird": {
+    "image": "/images/bird-first.svg",
+    "alt": "Decorative bird"
+  }
+}

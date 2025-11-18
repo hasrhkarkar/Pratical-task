@@ -1,0 +1,256 @@
+.about-section {
+  padding: 60px 20px;
+  background: #fff;
+  margin-top: 100px;
+
+  .about-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  .about-left {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .photo {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border: 1px solid #ef3198;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      background: #fff;
+      padding: 6px;
+
+      img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .photo-1 {
+      top: -91px;
+      left: 0;
+      @media (max-width: 768px) {
+        top: unset;
+        left: unset;
+      }
+    }
+    .photo-2 {
+      top: 118px;
+      left: 68%;
+      transform: translateX(-50%);
+      box-shadow: 0 6px 20px rgba(255, 20, 147, 0.06);
+      @media (max-width: 768px) {
+        top: unset;
+        left: unset;
+      }
+    }
+    .photo-3 {
+      bottom: -79%;
+
+      left: -10px;
+    }
+
+    @media (max-width: 900px) {
+      height: auto;
+      .photo {
+        position: relative;
+        margin-bottom: 14px;
+      }
+      .photo-2 {
+        transform: none;
+      }
+    }
+  }
+
+  .about-right {
+    padding: 10px 20px;
+
+    .about-title {
+      color: #ff58b3;
+      font-size: 22px;
+      text-align: center;
+      margin: 0 0 20px 0;
+      font-family: "Gochi Hand";
+    }
+
+    .about-text {
+      color: #333;
+      line-height: 1.8;
+      max-width: 520px;
+      margin: 0 auto 24px auto;
+      text-align: left;
+      font-family: "Inter";
+    }
+
+    .about-btn {
+      display: inline-block;
+      background: #4a0f73;
+      color: #fff;
+      border: none;
+      padding: 14px 65px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .about-bird {
+    position: absolute;
+    right: -18%;
+    bottom: -63%;
+    width: 40%;
+    pointer-events: none;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  // Enrollment Form Styles
+  .enrollment-form-wrapper {
+    margin-top: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, #6b1d7c 0%, #4a0f73 100%);
+    border-radius: 15px;
+    color: #fff;
+
+    .form-title {
+      font-size: 20px;
+      margin: 0 0 25px 0;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  .enrollment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .form-input {
+        padding: 12px 16px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        font-size: 14px;
+        background: rgba(255, 255, 255, 0.9);
+        color: #333;
+        transition: all 0.3s ease;
+        font-family: inherit;
+
+        &::placeholder {
+          color: #999;
+        }
+
+        &:focus {
+          outline: none;
+          border-color: #fff;
+          background: #fff;
+          box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+        }
+
+        &.error {
+          border-color: #ff6b6b;
+          background-color: rgba(255, 107, 107, 0.1);
+        }
+      }
+
+      .error-message {
+        color: #ff6b6b;
+        font-size: 12px;
+        margin-top: 3px;
+        font-weight: 500;
+      }
+    }
+
+    .get-it-now-btn {
+      padding: 12px 30px;
+      background: #fff;
+      color: #6b1d7c;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+
+      &:hover {
+        background: #f0f0f0;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+
+    .success-message {
+      padding: 12px 16px;
+      background: rgba(34, 197, 94, 0.2);
+      border: 2px solid #22c55e;
+      border-radius: 8px;
+      color: #fff;
+      text-align: center;
+      font-weight: 500;
+      animation: slideIn 0.3s ease;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .enrollment-form-wrapper {
+      padding: 20px;
+      margin-top: 30px;
+
+      .form-title {
+        font-size: 18px;
+      }
+    }
+
+    .enrollment-form {
+      .form-group {
+        .form-input {
+          padding: 10px 12px;
+          font-size: 14px;
+        }
+      }
+
+      .get-it-now-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}

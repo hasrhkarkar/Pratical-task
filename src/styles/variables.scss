@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// ============================================
+// COLOR VARIABLES
+// ============================================
+
+// Primary Colors
+$primary-color: #ff8c00;
+$primary-dark: #e67e00;
+$primary-light: #ffb84d;
+
+// Neutral Colors
+$white: #fff;
+$black: #000;
+$gray-dark: #333;
+$gray-medium: #6b6b6b;
+$gray-light: #eee;
+$gray-lighter: #f5f5f5;
+
+// Background Colors
+$bg-primary: #fff;
+$bg-secondary: #f9f9f9;
+
+// Text Colors
+$text-primary: #333;
+$text-secondary: #6b6b6b;
+$text-light: #999;
+
+// ============================================
+// SPACING VARIABLES
+// ============================================
+
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 12px;
+$spacing-lg: 16px;
+$spacing-xl: 24px;
+$spacing-2xl: 32px;
+$spacing-3xl: 48px;
+
+// ============================================
+// FONT VARIABLES
+// ============================================
+
+$font-family-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+$font-family-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+// Font Sizes
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 32px;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// ============================================
+// BORDER RADIUS
+// ============================================
+
+$border-radius-sm: 3px;
+$border-radius-md: 6px;
+$border-radius-lg: 8px;
+$border-radius-xl: 12px;
+
+// ============================================
+// SHADOWS
+// ============================================
+
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 2px 6px rgba(0, 0, 0, 0.05);
+$shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+// ============================================
+// TRANSITIONS
+// ============================================
+
+$transition-fast: 0.15s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// ============================================
+// BREAKPOINTS
+// ============================================
+
+$breakpoint-xs: 320px;
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1600px;
+
+// ============================================
+// Z-INDEX
+// ============================================
+
+$z-index-dropdown: 10;
+$z-index-sticky: 20;
+$z-index-fixed: 30;
+$z-index-modal-backdrop: 40;
+$z-index-modal: 50;
+$z-index-popover: 60;
+$z-index-tooltip: 70;
+$z-index-header: 100;
+
+
+body{
+    overflow-x: hidden;
+}

@@ -1,0 +1,76 @@
+.kidsclub-slider {
+  width: 100%;
+  padding: 2rem 0;
+
+  .slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    @media (max-width: 768px) {
+      font-size: 51px;
+    }
+
+    .text-box {
+      flex: 1;
+      min-width: 300px;
+      padding: 1rem;
+
+      h2 {
+        font-size: 80px;
+        font-weight: 400;
+        color: #000;
+        margin: 0;
+
+        span {
+          color: #e91e63;
+          font-weight: 700;
+          font-size: 80px;
+        }
+      }
+
+      p {
+        font-size: 80px;
+        margin-top: 0.5rem;
+        color: #333;
+        font-weight: 400;
+        max-width: 600px;
+        font-family: "Inter";
+      }
+    }
+
+    .image-box {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  // Dots for swiper
+  .swiper-pagination-bullet {
+    background: #e91e63;
+  }
+}
+@media (max-width: 768px) {
+  .kidsclub-slider {
+    .slide-content {
+      .text-box {
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

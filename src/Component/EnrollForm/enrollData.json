@@ -1,0 +1,30 @@
+{
+  "enroll": {
+    "title": "How to enroll your child to a Class?",
+    "formFields": [
+      {
+        "id": "name",
+        "type": "text",
+        "placeholder": "Name",
+        "required": true
+      },
+      {
+        "id": "email",
+        "type": "email",
+        "placeholder": "Email",
+        "required": true
+      },
+      {
+        "id": "phone",
+        "type": "tel",
+        "placeholder": "Phone Number",
+        "required": true
+      }
+    ],
+    "buttonText": "Get it Now",
+    "image": {
+      "src": "/images/kidzimg.svg",
+      "alt": "Happy child"
+    }
+  }
+}
